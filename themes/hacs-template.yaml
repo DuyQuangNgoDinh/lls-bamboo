@@ -1,0 +1,25 @@
+#
+# Template Theme
+#
+lls-bamboo:
+  background-image: 'center / cover no-repeat url("/hacsfiles/themes/lls-bamboo/background.jpg") fixed'
+  lovelace-background: var(--background-image)
+  div#contentContainer: var(--background-image)
+
+  primary-color: "#8C665A"
+  sidebar-background-color: "#8C665A"
+  card-background-color: "#E4C6A2"
+  sidebar-menu-button-text-color: "#FFFFFF"
+  sidebar-text-color: "#FFFFFF"
+  sidebar-icon-color: "#FFFFFF"
+
+  label-badge-background-color: "#8C665A"
+
+  # For card mod
+  card-mod-theme: lls-bamboo
+  card-mod-root-yaml: |
+    .: |
+      
+      app-header, app-toolbar {
+        background: var(--background-image);
+      }
